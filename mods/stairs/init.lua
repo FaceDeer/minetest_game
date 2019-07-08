@@ -456,6 +456,7 @@ end
 
 
 -- Register default stairs and slabs
+if minetest.get_modpath("default") then
 
 stairs.register_stair_and_slab(
 	"wood",
@@ -924,3 +925,4 @@ stairs.register_stair_outer(
 	default.node_sound_glass_defaults(),
 	false
 )
+end
